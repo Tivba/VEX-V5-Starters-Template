@@ -9,14 +9,9 @@ using namespace vex;
 
 void rightAuton() {
 
-  //drivePID(24, 0.1, 0, 0.01); 
-  //turnPID(90, 0.3, 0 ,0); 
-  RF.spin(forward, 100, percent);
-  RM.spin(forward, 100, percent);
-  RB.spin(forward, 100, percent);
-  LF.spin(forward, 100, percent);
-  LM.spin(forward, 100, percent);
-  LB.spin(forward, 100, percent);
+  drivePID(12, 0.06, 0, 0.01); 
+  
+  
 }
 
 void leftAuton() {

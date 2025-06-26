@@ -4,7 +4,7 @@
 using namespace vex;
 
 double inchesToDegrees(double inches) {
-  return (inches / (M_PI * 3.25)) * 360.0 * (5/3);
+  return (inches / (M_PI * 3.25)) * 360.0 * (5.0/3.0);
 }
 
 void setDTPosition(double inches) {
@@ -18,12 +18,12 @@ void setDTPosition(double inches) {
 }
 
 void stopDT() {
-    LF.stop();
-    LM.stop();
-    LB.stop();
-    RF.stop();
-    RM.stop();
-    RB.stop();
+    LF.stop(brake);
+    LM.stop(brake);
+    LB.stop(brake);
+    RF.stop(brake);
+    RM.stop(brake);
+    RB.stop(brake);
 }
 
 

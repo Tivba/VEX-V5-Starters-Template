@@ -13,12 +13,12 @@ If it seems like some of your motors are running against eachother in the drivet
 vex::brain Brain;
 vex::controller Controller(vex::controllerType::primary);
 
-vex::motor LB(vex::PORT3, vex::gearSetting::ratio6_1, false); //Left Back Motor
-vex::motor LM(vex::PORT8, vex::gearSetting::ratio6_1, false); //Left Middle Motor
-vex::motor LF(vex::PORT1, vex::gearSetting::ratio6_1, false); //Left Front Motor
-vex::motor RB(vex::PORT4, vex::gearSetting::ratio6_1, true); //Right Back Motor
-vex::motor RM(vex::PORT5, vex::gearSetting::ratio6_1, true); //Right Middle Motor
-vex::motor RF(vex::PORT2, vex::gearSetting::ratio6_1, true); //Right Front Motor
+vex::motor LB(vex::PORT7, vex::gearSetting::ratio6_1, true); //Left Back Motor
+vex::motor LM(vex::PORT1, vex::gearSetting::ratio6_1, true); //Left Middle Motor
+vex::motor LF(vex::PORT5, vex::gearSetting::ratio6_1, true); //Left Front Motor
+vex::motor RB(vex::PORT4, vex::gearSetting::ratio6_1, false); //Right Back Motor
+vex::motor RM(vex::PORT3, vex::gearSetting::ratio6_1, false); //Right Middle Motor
+vex::motor RF(vex::PORT6, vex::gearSetting::ratio6_1, false); //Right Front Motor
 
 vex::motor_group LeftDrive(LF, LM, LB);
 vex::motor_group RightDrive(RF, RM, RB);
